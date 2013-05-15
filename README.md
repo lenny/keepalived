@@ -133,6 +133,7 @@ node[:keepalived][:check_scripts][:chk_init] = {
 node[:keepalived][:instances][:vi_1] = {
   :ip_addresses => '10.0.2.254',
   :interface => 'eth0',
+  :smtp_alert => true,
   :track_script => 'chk_init',
   :nopreempt => false,
   :advert_int => 1,
